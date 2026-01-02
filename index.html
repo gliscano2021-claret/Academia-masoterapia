@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Academia de Masoterapia Miguel Liscano</title>
+    
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans:wght@400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    
     <style>
         /* ESTILOS GENERALES */
         body {
@@ -25,13 +26,6 @@
         a {
             text-decoration: none;
             color: inherit;
-        }
-
-        /* COLUNAS Y DISPOSICIÓN */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
         }
 
         /* HEADER */
@@ -72,19 +66,6 @@
             color: #4B8F29;
         }
 
-        header .cta-button {
-            background-color: #D4AF37;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: 600;
-            transition: background-color 0.3s ease;
-        }
-
-        header .cta-button:hover {
-            background-color: #B89C2D;
-        }
-
         /* HERO SECTION */
         .hero {
             background-image: url('https://via.placeholder.com/1600x800'); /* Placeholder de fondo */
@@ -122,7 +103,7 @@
         /* SECCIÓN SOBRE LA ACADEMIA */
         .about {
             background-color: #fff;
-            padding: 80px 0;
+            padding: 80px 20px;
             text-align: center;
         }
 
@@ -131,183 +112,17 @@
             margin-bottom: 20px;
         }
 
-        .about .features {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .about .feature {
-            width: 30%;
-            margin: 20px 0;
-            text-align: center;
-        }
-
-        .about .feature i {
-            font-size: 3rem;
-            color: #4B8F29;
-        }
-
-        /* SECCIÓN CURSOS DESTACADOS */
-        .courses {
-            background-color: #f9f9f9;
-            padding: 80px 0;
-        }
-
-        .courses h2 {
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .courses .course-cards {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .courses .course-card {
-            background-color: #fff;
-            width: 30%;
-            margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            padding: 20px;
-            transition: transform 0.3s ease;
-        }
-
-        .courses .course-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .courses .course-card .course-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .courses .course-card .course-price {
+        .about p {
             font-size: 1.2rem;
-            color: #4B8F29;
-            margin-bottom: 20px;
+            line-height: 1.6;
+            margin: 20px 0;
         }
 
-        .courses .course-card .btn-secondary {
-            background-color: #D4AF37;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: 600;
-            transition: background-color 0.3s ease;
-        }
-
-        .courses .course-card .btn-secondary:hover {
-            background-color: #B89C2D;
-        }
-
-        /* SECCIÓN SOBRE MIGUEL LISCANO */
-        .about-miguel {
-            padding: 80px 0;
-            background-color: #fff;
-            text-align: center;
-        }
-
-        .about-miguel img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-        }
-
-        .about-miguel h2 {
-            font-size: 2.5rem;
+        .about img {
+            max-width: 100%;
+            height: auto;
             margin-top: 20px;
-        }
-
-        .about-miguel p {
-            font-size: 1.2rem;
-            margin: 10px 0;
-        }
-
-        .about-miguel .btn-primary {
-            background-color: #D4AF37;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: 600;
-            transition: background-color 0.3s ease;
-        }
-
-        .about-miguel .btn-primary:hover {
-            background-color: #B89C2D;
-        }
-
-        /* SECCIÓN TESTIMONIOS */
-        .testimonials {
-            background-color: #f9f9f9;
-            padding: 80px 0;
-            text-align: center;
-        }
-
-        .testimonials h2 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-        }
-
-        .testimonials .testimonial-slider {
-            display: flex;
-            overflow: hidden;
-            justify-content: center;
-        }
-
-        .testimonials .testimonial {
-            width: 80%;
-            margin: 0 20px;
-            background-color: #fff;
-            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        /* SECCIÓN CONTACTO */
-        .contact {
-            padding: 80px 0;
-            background-color: #fff;
-            text-align: center;
-        }
-
-        .contact h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .contact form {
-            max-width: 600px;
-            margin: 0 auto;
-            display: grid;
-            gap: 15px;
-        }
-
-        .contact input, .contact textarea {
-            padding: 10px;
-            font-size: 1rem;
-            width: 100%;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        .contact .submit-btn {
-            background-color: #D4AF37;
-            color: white;
-            padding: 10px 20px;
-            font-weight: 600;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .contact .submit-btn:hover {
-            background-color: #B89C2D;
         }
 
         /* FOOTER */
@@ -333,4 +148,66 @@
             font-weight: 600;
         }
 
-        footer .
+        footer .footer-links a:hover {
+            color: #D4AF37;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="logo">Academia de Masoterapia Miguel Liscano</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Sobre Miguel</a></li>
+                    <li><a href="#">Testimonios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <h1>Transforma Vidas a Través del Tacto Sanador</h1>
+            <p>Formación profesional en masoterapia con enfoque humano y científico</p>
+            <a href="#" class="btn-primary">Ver Cursos Disponibles</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE LA ACADEMIA -->
+    <section class="about">
+        <div class="container">
+            <h2>Bienvenido a Nuestra Academia</h2>
+            <p>En la Academia de Masoterapia Miguel Liscano ofrecemos formación profesional en masoterapia, con una
+                metodología innovadora y práctica. Nuestro enfoque es mejorar el bienestar de las personas a través del
+                arte del masaje, combinando técnicas científicas y naturales para un proceso de sanación efectivo.</p>
+            <img src="https://via.placeholder.com/1200x500" alt="Masoterapia en acción">
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">Academia de Masoterapia Miguel Liscano</div>
+        <div class="footer-links">
+            <a href="#">Política de privacidad</a>
+            <a href="#">Términos y condiciones</a>
+            <a href="#">Redes Sociales</a>
+        </div>
+        <p>&copy; 2026 Academia de Masoterapia Miguel Liscano. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // JavaScript básico para interacciones simples si es necesario
+        document.querySelector('.btn-primary').addEventListener('click', function () {
+            alert('¡Bienvenido a la Academia de Masoterapia Miguel Liscano!');
+        });
+    </script>
+</body>
+
+</html>
